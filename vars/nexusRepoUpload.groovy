@@ -5,7 +5,7 @@ def uploadToNexus(String nexusUrl, String repository, String credentialsId, Stri
   }
     // Using the Nexus Artifact Uploader Plugin to upload to Nexus
     nexusArtifactUploader(
-        nexusUrl: nexusUrl
+        nexusUrl: nexusUrl,
         nexusVersion: nexusVersion,     // Nexus version: nexus2 or nexus3
         protocol: protocol,             // or 'https' based on your setup
         groupId: groupId,               // Maven Group ID
