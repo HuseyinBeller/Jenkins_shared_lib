@@ -1,4 +1,4 @@
-def uploadToNexus(String nexusUrl, String repository, String credentialsId, String, groupId, String artifactId, String version, String packaging, String filePath, String nexusVersion, String protocol, String type) {
+def call(String nexusUrl, String repository, String credentialsId, String, groupId, String artifactId, String version, String packaging, String filePath, String nexusVersion, String protocol, String type) {
 
   if (!nexusUrl || !repository || !credentialsId || !groupId || !artifactId || !version || !packaging || !filePath, !nexusVersion ||) {
     error("Missing required parameters for Nexus upload")
@@ -16,7 +16,7 @@ def uploadToNexus(String nexusUrl, String repository, String credentialsId, Stri
             [
                 artifactId: artifactId, // Maven Artifact ID
                 type: packaging,        // Packaging type (e.g., jar, zip, etc.)
-                file: filePath          // Path to the file you want to upload
+                file: filePath       // Path to the file you want to upload
             ]
         ]
     )
