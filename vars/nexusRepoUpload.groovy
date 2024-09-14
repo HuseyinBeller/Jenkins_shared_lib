@@ -1,6 +1,6 @@
 def call(String nexusUrl, String repository, String credentialsId, String, groupId, String artifactId, String version, String packaging, String filePath, String nexusVersion, String protocol, String type) {
 
-  if (!nexusUrl || !repository || !credentialsId || !groupId || !artifactId || !version || !packaging || !filePath, !nexusVersion ||) {
+  if (!nexusUrl || !repository || !credentialsId || !groupId || !artifactId || !version || !packaging ||  !nexusVersion ||) {
     error("Missing required parameters for Nexus upload")
   }
     // Using the Nexus Artifact Uploader Plugin to upload to Nexus
