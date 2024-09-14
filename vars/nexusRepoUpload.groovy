@@ -22,21 +22,21 @@
 //     )
 // }
 
-def call(String nexusUrl, String repository, String credentialsId, String, groupId, String artifactId, String version, String packaging, String file, String nexusVersion, String protocol, String type, String classifier) {
-    nexusArtifactUploader artifacts:
-    [
-        [
-            artifactId: artifactId,
-            classifier: classifier,
-            file: file,
-            type: type
-        ]
-    ],
-    credentialsId: credentialsId,
-    groupId: groupId,
-    nexusUrl: nexusUrl,
-    nexusVersion: nexusVersion,
-    protocol: protocol,
-    repository: repository,
-    version: version
-}
+// def call(String nexusUrl, String repository, String credentialsId, String, groupId, String artifactId, String version, String packaging, String file, String nexusVersion, String protocol, String type, String classifier) {
+//     nexusArtifactUploader artifacts:
+//     [
+//         [
+//             artifactId: artifactId,
+//             classifier: classifier,
+//             file: file,
+//             type: type
+//         ]
+//     ],
+//     credentialsId: credentialsId,
+//     groupId: groupId,
+//     nexusUrl: nexusUrl,
+//     nexusVersion: nexusVersion,
+//     protocol: protocol,
+//     repository: repository,
+//     version: version
+// }
